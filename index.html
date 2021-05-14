@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang = "en"> 
+    <head>
+        <meta charset ="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <strong>
+            <title>
+                Coding Quiz It Up
+            </title>
+        </strong>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+
+    
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Coding Quiz</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="highscores.html">View Highscores</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>  
+
+    <div class="timer">Time: <span id="time">0</span></div>
+
+    <div class="wrap">
+        <div id="start-screen" class ="start">
+            <h1> Coding Quiz for Beginnners</h1>
+            <p>
+                Ready to do this quiz? 
+            </p>
+            <button id="start">Start Quiz</button>
+        </div>
+        <div id="questions" class="card hide" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title" id="question-title"></h5>
+              
+              <p class="card-text" >
+                <ul class="list-group" id="choices">
+                    
+                  </ul>
+              </p>
+            </div>
+          </div>
+        <!-- <div id="questions" class="hide">
+            <h2 id="question-title"></h2>
+            <div id="choices" class="choices"></div>
+        </div> -->
+
+        <div id="end-screen" class="hide">
+            <h2>Quiz is Done!</h2>
+            <p>
+                Your score is <span id="final-score"></span>
+            </p>
+            <p> 
+                Enter your Initials: <input type="text" id="initials" max="3" />
+                <button id="submit">Submit</button>
+            </p>
+        </div>
+
+        <div id="feedback" class="feedback hide"></div>
+    </div>
+
+    <script src="./js/questions.js"></script>
+    <script src="./js/logic.js"></script>
+
+</body>
+</html>
